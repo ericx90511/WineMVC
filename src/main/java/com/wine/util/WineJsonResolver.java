@@ -24,9 +24,5 @@ public class WineJsonResolver {
         ObjectMapper mapper = new ObjectMapper();
         List<Wine> wines = mapper.readValue(inputStream, mapper.getTypeFactory().
                 constructCollectionType(List.class, Wine.class));
-        for(Wine wine : wines)
-        {
-            System.out.println("name: "+wine.getDescription().get(0));
-        }
     }
 }
