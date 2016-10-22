@@ -1,0 +1,52 @@
+[
+  {"name":"Sassoregale Sangiovese",
+    "description": ["Bright ruby red; characteristically varietal aromatics of cherries,",
+      "forest fruits and spices, lifted by subtle aromatic herbs; assertively full entry,",
+      "intense yet elegant structure and extract finishing attractively long with a reprise of the fragrant",
+      "fruitiness and balsamic notes."
+    ],
+    "origin":"Tuscany, ITALY", "kind":"Sangiovese", "price":17.99, "grade":3, "abv":13.5},
+  {"name":"Chateau Lynch-Bages","description":[
+    "Classic Lynch-Bages with just a bit of extra power and richness. While thetannins ",
+    "are structured, it is the velvety fruit that rolls around the mouth that is the most",
+    " dominant character. It is coming together into a wine that will be big and dense, ",
+    "but never over the top."
+  ],"origin":"Pauillac, FRANCE", "kind":"Cabernet Sauvignon", "price":195.00, "grade":4, "abv":13},
+  {"name":"Clarendon Hills Romas Grenache ","description":[
+    "Dry spiced and savory fruited palate is supported by complex tannin structure. Acidity ",
+    "and tannin are expressed in this layered and multi-dimensional example."
+  ],"origin":"McLaren Vale, AUSTRALIA", "kind":"Grenache", "price":59.99, "grade":3, "abv":14.5},
+  {"name":"Roserock","description":[
+    "The Eola-Amity Hills Pinot Noir cuvee is drawn from Roserock's 35 estate Pinot Noir blocks.",
+    " It clearly conveys winemaker Veronique Drouhin's dedication to elegance and finesse, and ",
+    "continues a long tradition of producing fine wines."
+  ],"origin":"Eola-Amity Hills, Oregon, USA", "kind":"Pinot Noir", "price":32.99, "grade":3, "abv":14.1},
+  {"name":"Quinta do Crasto Douro Red ","description":[
+    "Intense vibrant Violet. Lifted aromas of fresh red forests fruits, very well integrated with ",
+    "elegant flowery notes. Elegant and fresh approach, with upfront fruits leading to a solid structure ",
+    "with fine, round and evolving tannins. Finishes very pleasant, persistent, with fresh aromatic notes ",
+    "of ripe wild berries fruit."
+  ],"origin":"Douro, PORTUGAL", "kind":"Tinta Roriz", "price":21.99, "grade":4, "abv":14.5},
+  {"name":"Acustic Celler Acustic Blanc ","description":[
+    "Light gold-colored, it exhibits an alluring nose of baking spices, buttered popcorn, peach skin,",
+    " and tropical aromas. This is followed by a rich, smooth-textured, spicy wine that has good balancing ",
+    "acidity and a lengthy, fruit-filled finish."
+  ],"origin":"Montsant, SPAIN", "kind":"Garnacha Bianca", "price":17.95, "grade":2, "abv":14},
+  {"name":"Astrolabe Province Sauvignon Blanc","description":[
+    "Pale straw with green highlights. A bouquet of lemongrass, lime peel and elderflower, with background ",
+    "notes of white currant and red pepper. Medium-bodied with white peach, gooseberry and citrus flavours, ",
+    "and a dry mineral finish."
+  ],"origin":"Marlborough, NEW ZEALAND", "kind":"Sauvignon Blanc", "price":18.99, "grade":2, "abv":13.5},
+  {"name":"Chateau de Segries Tavel Rose ","description":[
+    "Ruby color. An intense nose with aromas of pureed strawberries and raspberries. A beautiful palate ",
+    "that is fresh tasting, delicious and perfectly balanced."
+  ],"origin":"Tavel, FRANCE", "kind":"Grenache", "price":19.99, "grade":2, "abv":14.5},
+  {"name":"Barnard Griffin Rose of Sangiovese","description":[
+    "A luscious array of strawberry, melon and cranberry notes are backed up by crisp, palate-cleansing acidity.",
+    " These flavors are expansive, persisting through the long, satisfying finish. Exciting and fragrant!"
+  ],"origin":"Columbia Valley, Washington, USA", "kind":"Sangiovese", "price":12.99, "grade":3, "abv":12.9},
+  {"name":"Niner Paso Robles Sauvignon Blanc","description":[
+    "The nose is redolent with tropical fruit aromas of ripened pineapple and papaya, accented with a touch ",
+    "of honey. The rounded and creamy palate carries the wine through to a crisp finish."
+  ],"origin":"Paso Robles, California, USA", "kind":"Sauvignon Blanc", "price":22.99, "grade":3, "abv":14.4}
+]
