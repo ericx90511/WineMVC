@@ -35,21 +35,22 @@ public class WineJPABootstrap implements ApplicationListener<ContextRefreshedEve
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-        List<Wine> wines = getWines(10);
-        for (Wine wine : wines) {
-            wineService.saveOrUpdate(wine);
-        }
-
         addConsoleAppender("Console");
         addLogger("com.wine", "Console");
         setLogLevel("com.wine", "DEBUG");
 
         try {
-            WineJsonResolver.readJsonFile();
-        }catch (IOException i)
-        {
+            List<Wine> wines = WineJsonResolver.readJsonFile();
+
+            for (Wine wine : wines) {
+                wineService.saveOrUpdate(wine);
+            }
+        }catch (IOException i) {
             log.error("failed to read Json file", i);
             Throwables.propagate(i);
+        }catch (Throwable t) {
+            log.error("unexpected error", t);
+            Throwables.propagate(t);
         }
 
     }

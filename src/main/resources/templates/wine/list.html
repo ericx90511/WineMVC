@@ -21,12 +21,30 @@
         <h2>Wine List</h2>
         <table class="table table-striped">
             <tr>
+                <th>Id</th>
                 <th>Wine name</th>
+                <th>Origin</th>
+                <th>Show</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </tr>
             <tr th:each="wine : ${wines}">
+                <td th:text="${wine.id}"></td>
                 <td th:text="${wine.name}"></td>
+                <td th:text="${wine.origin}"></td>
+                <td><a th:href="${'/wine/show/' + wine.id}">View</a></td>
+                <td><a th:href="${'/wine/edit/' + wine.id}">Edit</a></td>
+                <td><a th:href="${'/wine/delete/' + wine.id}">Delete</a></td>
             </tr>
         </table>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <a href="/wine/new">New Wine</a>
+        </div>
+        <div class="col-sm-3">
+            <a href="/">Back to Front Page</a>
+        </div>
     </div>
 </div>
 </body>

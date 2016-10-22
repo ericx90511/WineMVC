@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Core Online Tutorial - Show Customer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <link href="../../static/css/spring-core.css"
+          th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Show customer</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Wine Id:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${wine.id}">Wine ID</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Wine Name</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${wine.name}">Wine Name</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Wine Description</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${#strings.arrayJoin(wine.description, '')}">
+                            Wine Description</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Wine Origin</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${wine.origin}">Wine Origin</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Grape Kind</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${wine.kind}">Wine Kind</p>
+                    </div>
+                </div>
+                <div class="form group">
+                    <label class="col-sm-2 control-label">Wine Grade</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${wine.grade}">Wine Grade</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Wine ABV</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${wine.abv}">Wine ABV</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Wine Price</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${wine.price}">Wine Price</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
