@@ -26,19 +26,9 @@ public class Wine {
     private String origin;
     private String kind;
 
-    private Integer price;
+    private Double price;
     private Integer grade;
-    private Integer abv;
-
-    public Integer getYear() {
-        return year;
-    }
-
-    public void setYear(Integer year) {
-        this.year = year;
-    }
-
-    private Integer year;
+    private Double abv;
 
     public Integer getId() {
         return id;
@@ -88,11 +78,11 @@ public class Wine {
         this.kind = kind;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -104,11 +94,11 @@ public class Wine {
         this.grade = grade;
     }
 
-    public Integer getAbv() {
+    public Double getAbv() {
         return abv;
     }
 
-    public void setAbv(Integer abv) {
+    public void setAbv(Double abv) {
         this.abv = abv;
     }
 }

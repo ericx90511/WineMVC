@@ -18,11 +18,12 @@ public class WineJsonResolver {
 
     private WineJsonResolver() {}
 
-    public static void readJsonFile() throws IOException {
+    public static List<Wine> readJsonFile() throws IOException {
         File jsonFile = new File(JSON_FILE);
         InputStream inputStream = Files.asByteSource(jsonFile).openStream();
         ObjectMapper mapper = new ObjectMapper();
         List<Wine> wines = mapper.readValue(inputStream, mapper.getTypeFactory().
                 constructCollectionType(List.class, Wine.class));
+        return wines;
     }
 }
